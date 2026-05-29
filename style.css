@@ -1,0 +1,240 @@
+body{
+    font-family: Arial, sans-serif;
+    background:#eef2ff;
+    margin:0;
+    padding:20px;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.logo{
+    font-size:55px;
+    margin-bottom:10px;
+}
+
+h1{
+    color:#2563eb;
+    font-size:42px;
+    margin-bottom:5px;
+}
+
+.subtitle{
+    color:#666;
+    margin-bottom:25px;
+}
+
+/* Dashboard */
+
+.dashboard{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin:20px 0;
+}
+
+.card{
+    color:white;
+    width:180px;
+    padding:15px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card:nth-child(1){
+    background:#2563eb;
+}
+
+.card:nth-child(2){
+    background:#f59e0b;
+}
+
+.card:nth-child(3){
+    background:#8b5cf6;
+}
+
+.card:nth-child(4){
+    background:#22c55e;
+}
+
+.card h2{
+    margin:0;
+    font-size:30px;
+}
+
+.card p{
+    margin-top:10px;
+}
+
+/* Form */
+
+.form{
+    margin:25px 0;
+}
+
+input,
+select{
+    padding:10px;
+    margin:5px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    outline:none;
+}
+
+input:focus,
+select:focus{
+    border-color:#2563eb;
+}
+
+#search{
+    width:350px;
+    margin:20px;
+}
+
+/* Buttons */
+
+button{
+    padding:10px 15px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    color:white;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+button:hover{
+    opacity:0.85;
+}
+
+.form button{
+    background:#2563eb;
+}
+
+.edit-btn{
+    background:#f59e0b;
+}
+
+.delete-btn{
+    background:#ef4444;
+}
+
+/* Table */
+
+table{
+    width:100%;
+    margin-top:20px;
+    border-collapse:collapse;
+    background:white;
+}
+
+th{
+    background:linear-gradient(
+        90deg,
+        #2563eb,
+        #1e40af
+    );
+    color:white;
+}
+
+th,
+td{
+    border:1px solid #ddd;
+    padding:12px;
+}
+
+tr:nth-child(even){
+    background:#f8fafc;
+}
+
+tr:hover{
+    background:#dbeafe;
+}
+
+/* Status Badges */
+
+.status{
+    padding:6px 12px;
+    border-radius:20px;
+    color:white;
+    font-weight:bold;
+}
+
+.new{
+    background:#3b82f6;
+}
+
+.contacted{
+    background:#f59e0b;
+}
+
+.converted{
+    background:#22c55e;
+}
+
+/* Priority */
+
+.high{
+    color:red;
+    font-weight:bold;
+}
+
+.medium{
+    color:orange;
+    font-weight:bold;
+}
+
+.low{
+    color:green;
+    font-weight:bold;
+}
+
+/* Footer */
+
+footer{
+    margin-top:30px;
+    color:gray;
+    font-size:14px;
+}
+
+/* Mobile Responsive */
+
+@media(max-width:768px){
+
+    .dashboard{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .card{
+        width:90%;
+    }
+
+    input,
+    select,
+    button{
+        width:90%;
+        margin:8px 0;
+    }
+
+    #search{
+        width:90%;
+    }
+
+    table{
+        font-size:12px;
+    }
+}

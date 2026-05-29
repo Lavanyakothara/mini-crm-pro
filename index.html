@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini CRM Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="logo">📊</div>
+
+    <h1>Mini CRM Pro</h1>
+
+    <p class="subtitle">
+        Manage your leads efficiently and track customer relationships.
+    </p>
+
+    <div class="dashboard">
+
+        <div class="card">
+            <h2 id="totalLeads">0</h2>
+            <p>Total Leads</p>
+        </div>
+
+        <div class="card">
+            <h2 id="newLeads">0</h2>
+            <p>New Leads</p>
+        </div>
+
+        <div class="card">
+            <h2 id="contactedLeads">0</h2>
+            <p>Contacted</p>
+        </div>
+
+        <div class="card">
+            <h2 id="convertedLeads">0</h2>
+            <p>Converted</p>
+        </div>
+
+    </div>
+
+    <div class="form">
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Enter Name">
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Enter Email">
+
+        <input
+            type="text"
+            id="source"
+            placeholder="Lead Source">
+
+        <input
+            type="date"
+            id="followup">
+
+        <select id="priority">
+            <option>High</option>
+            <option>Medium</option>
+            <option>Low</option>
+        </select>
+
+        <select id="status">
+            <option>New</option>
+            <option>Contacted</option>
+            <option>Converted</option>
+        </select>
+
+        <button onclick="addLead()">
+            Add Lead
+        </button>
+
+    </div>
+
+    <input
+        type="text"
+        id="search"
+        placeholder="Search Leads..."
+        onkeyup="searchLead()">
+
+    <br>
+
+    <button onclick="exportCSV()">
+        Export CSV
+    </button>
+
+    <table id="leadTable">
+
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Source</th>
+            <th>Priority</th>
+            <th>Follow Up</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+
+    </table>
+
+    <footer>
+        Developed by Lavanya © 2026
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
